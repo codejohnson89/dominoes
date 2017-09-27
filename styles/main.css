@@ -4,7 +4,7 @@ body {
     background-color: #111;
     background: url(../images/bkgrd.jpg) no-repeat center fixed;
     background-size: cover;
-    color: #fff;
+    color: #333;
 }
 
 .teamOne,
@@ -30,4 +30,11 @@ button {
     color: #fff;
     font-size: 20px;
     border: none;
+}
+
+.header,
+.score,
+.teamName,
+.gameCount {
+    color: #fff;
 }
