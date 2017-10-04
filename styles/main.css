@@ -9,10 +9,12 @@ body {
 
 .teamOne,
 .teamTwo {
-    min-width: 300px;
+    min-width: 280px;
 }
 
-.teamOne {
+.teamOne,
+.teamTwo,
+.teamThree {
     border-right: 1px solid #333;
 }
 
@@ -50,4 +52,8 @@ button:focus {
 
 .header {
     color: #fff;
+}
+
+.modal-content {
+    width: 750px;
 }
