@@ -4,7 +4,7 @@ var teamThreeScore = 0;
 var teamFourScore = 0;
 var updateScore = [5, 10, 15, 20, 25, 30, 35];
 var score;
-var gameCount = $("#count").innerText;
+var gameCount = $("#count").text();
 var xplayers = [$("#teamThree"), $("#teamFour")];
 var oplayers = [$("#teamOne"), $("#teamTwo")];
 var i = 0;
@@ -65,17 +65,17 @@ function gameOver() {
 }
 
 $("#reset").click(function() {
-    $("#scoreOne").innerText = 0;
-    $("#scoreTwo").innerText = 0;
-    $("#scoreThree").innerText = 0;
-    $("#scoreFour").innerText = 0;
+    $("#scoreOne").text('0');
+    $("#scoreTwo").text('0');
+    $("#scoreThree").text('0');
+    $("#scoreFour").text('0');
     teamOneScore = 0;
     teamTwoScore = 0;
     teamThreeScore = 0;
     teamFourScore = 0;
     gameCount = 1;
-    $("#count").innerText = gameCount;
-    $("#results").innerHTML = "";
+    $("#count").text(gameCount);
+    $("#results").text("");
     i = 0;
     $(xplayers).addClass("d-none");
 });
@@ -83,16 +83,17 @@ $("#reset").click(function() {
 
 
 $("#newGame").click(function() {
-    $("#scoreOne").innerText = 0;
-    $("#scoreTwo").innerText = 0;
-    $("#scoreThree").innerText = 0;
-    $("#scoreFour").innerText = 0;
+    $("#scoreOne").text('0');
+    $("#scoreTwo").text('0');
+    $("#scoreThree").text('0');
+    $("#scoreFour").text('0');
     teamOneScore = 0;
     teamTwoScore = 0;
     teamThreeScore = 0;
     teamFourScore = 0;
     gameCount++;
-    $("#count").innerText = gameCount;
+    $("#count").text() = gameCount;
+    console.log('working');
 });
 
 $("#addPlayer").click(function() {
